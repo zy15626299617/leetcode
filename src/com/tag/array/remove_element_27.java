@@ -16,8 +16,9 @@ import java.util.Arrays;
 
 public class remove_element_27 {
     public static void main(String[] a){
-        //当需要移除的元素很多时：
+        //当需要移除的元素很多时,使用双指针将所有与target不相同的元素移动到数组左端并放回新数组长度
         int[] nums = new int[]{0,1,2,2,3,0,4,2};
+        System.out.println("原数组:"+Arrays.toString(nums));
         int val = 2;
         int i = 0;
         for (int j = 0; j < nums.length; j++) {
@@ -26,22 +27,27 @@ public class remove_element_27 {
                 i++;
             }
         }
+        System.out.println("取数组前"+i+"项");
         System.out.println(Arrays.toString(nums));
         //return i
 
-        //当移除的元素很少时
+        System.out.println("--------------------------------");
+
+        //当移除的元素很少时，将target与数组最后以为互换并将数组长度减一，最后返回新数组长度
         int[] nums_ = new int[]{4,1,2,3,4,5};
+        System.out.println("原数组:"+Arrays.toString(nums_));
         int val_ = 4;
         int length = nums_.length;
         int i_ = 0;
         while( i_ < length ){
-            if (nums[i_] == val_){
-                nums[i_] = nums[length];
+            if (nums_[i_] == val_){
+                nums_[i_] = nums_[length-1];
                 length--;
             }else{
                 i_++;
             }
         }
+        System.out.println("取数组前"+i_+"项");
         System.out.println(Arrays.toString(nums_));
         //return i
     }
