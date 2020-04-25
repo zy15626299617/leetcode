@@ -33,7 +33,6 @@ public class remove_duplicates_26 {
                     System.out.print("," + base_array[i]);
                 }
             }
-
             System.out.print("]");
         }
 
