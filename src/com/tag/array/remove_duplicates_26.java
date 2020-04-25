@@ -34,6 +34,8 @@ public class remove_duplicates_26 {
                 }
             }
             System.out.print("]");
+
+            System.out.print("test");
         }
 
     }
