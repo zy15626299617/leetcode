@@ -10,16 +10,24 @@ package com.tag.array;
 //nums2 = [2,5,6],       n = 3
 //输出: [1,2,2,3,5,6]
 
+import java.util.Arrays;
+
 public class merge {
     public static void main(String[] a){
         int[] nums1 = new int[]{1,2,3,0,0,0};
         int[] nums2 = new int[]{2,5,6};
+        int num1 = 3,num2 = 3;
+        int n = num1 - 1,m = num2 - 1;
+        int p = nums1.length - 1;
 
-        int i,j = 0;
-        while(i < nums1.length){
-            while(j < nums2.length){
-                if (nums2[j] >)
-            }
+        //当某个数组完成遍历退出
+        while (n >= 0 && m >= 0){
+            nums1[p--] = (nums1[n] > nums2[m]) ? nums1[n--] : nums2[m--];
         }
+
+        //如果nums2数组没有遍历完，则将剩余元素复制到num1的0-p项
+        if (m >= 0) System.arraycopy(nums2,0,nums1,0,p+1);
+
+        System.out.println(Arrays.toString(nums1));
     }
 }
