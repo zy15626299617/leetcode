@@ -17,7 +17,7 @@ package com.tag.array;
 //而刚开始的前一个元素相当于完成筛选，放进了合格的队列中，所以整个过程相当于遍历整个队列，将筛选合格的人按顺序放到另外一个队列中，因为题目规定
 //原地修改，所以这里将原数组的前N项假设成另一个队列
 
-public class remove_duplicates_26 {
+public class remove_duplicates {
     public static void main(String[] a) {
         int[] base_array = new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         if (base_array.length == 0) {

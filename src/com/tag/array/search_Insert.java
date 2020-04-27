@@ -10,7 +10,7 @@ package com.tag.array;
 //输入: [1,3,5,6], 2
 //输出: 1
 
-public class search_Insert_35 {
+public class search_Insert {
     public static void main(String[] a){
         int[] nums = new int[]{1,3,5,6};
         int val = 7;

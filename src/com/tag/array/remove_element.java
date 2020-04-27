@@ -13,7 +13,7 @@ package com.tag.array;
 
 import java.util.Arrays;
 
-public class remove_element_27 {
+public class remove_element {
     public static void main(String[] a){
         //当需要移除的元素很多时,使用双指针将所有与target不相同的元素移动到数组左端并放回新数组长度
         int[] nums = new int[]{0,1,2,2,3,0,4,2};
