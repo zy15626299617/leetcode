@@ -12,5 +12,16 @@ public class containsDuplicate_217 {
             map.add(x);
         }
         System.out.println("FALSE");
+
+
+        //未解决
+        //        Map map = new HashMap<Integer,Integer>();
+        //        for (int i = 0; i < nums.length-1; i++) {
+        //            if (map.containsValue(nums[i])){
+        //                return true;
+        //            }
+        //            map.put(i,nums[i]);
+        //        }
+        //        return false;
     }
 }
