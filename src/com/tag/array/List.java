@@ -16,7 +16,7 @@ package com.tag.array;
 
 import java.util.ArrayList;
 
-public class List {
+public class List{
     public static void main(String[] a){
         int row = 5;
 
