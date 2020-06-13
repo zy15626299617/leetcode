@@ -8,7 +8,7 @@ package com.tag.array;
 //输出: 6
 //解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
 
-public class maxSubArray {
+public class maxSubArray_un {
     public static void main(String[] a){
         int[] nums = new int[]{-2,1,-3,5,-1,2,1,-5,4};
 
