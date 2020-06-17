@@ -32,6 +32,7 @@ public class lemonadeChange_860 {
                     break;
             }
         }
+
         return true;
     }
 }
