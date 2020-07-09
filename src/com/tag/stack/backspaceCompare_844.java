@@ -6,6 +6,7 @@ import java.util.Stack;
  * Created by 周游 on 2020/6/13
  * E-mail:15626299617@163.com
  */
+
 public class backspaceCompare_844 {
     public boolean backspaceCompare(String S, String T) {
         Stack<Character> stack1 = new Stack<>();
